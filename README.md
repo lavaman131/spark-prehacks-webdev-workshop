@@ -11,33 +11,37 @@ https://fullstackopen.com/en/ 📚
 Follow these steps to run the presentation locally:
 
 1. Clone the repository: 📥
-   ```
-   git clone https://github.com/your-username/web-dev-beginner-workshop.git
-   cd web-dev-beginner-workshop
-   ```
+  
+```
+git clone https://github.com/lavaman131/spark-prehacks-webdev-workshop.git
+```
 
 2. Install fnm (Fast Node Manager): ⚡
-   ```
-   curl -fsSL https://fnm.vercel.app/install | bash
-   ```
 
-3. Install the latest LTS version of Node.js: 🟢
-   ```
-   fnm install --lts
-   fnm use lts-latest
-   ```
+```
+curl -fsSL https://fnm.vercel.app/install | bash
+```
 
-4. Install dependencies: 📦
-   ```
-   npm install
-   ```
+1. Install the latest LTS version of Node.js: 🟢
 
-5. Start the presentation: 🎬
-   ```
-   npm start
-   ```
+```
+fnm install --lts
+fnm use lts-latest
+```
 
-6. Open your browser and navigate to `http://localhost:8000` to view the presentation. 🌐
+1. Install dependencies: 📦
+
+```
+npm install
+```
+
+1. Start the presentation: 🎬
+
+```
+npm start
+```
+
+1. Open your browser and navigate to `http://localhost:8000` to view the presentation. 🌐
 
 ## Learn More 🧠
 
