@@ -47,6 +47,10 @@ npm start
 
 This presentation was created using Reveal.js. To learn more about how to create and customize your own presentations, check out the [Reveal.js documentation](https://revealjs.com/). 🎨
 
+## Exporting the Presentation 📤
+
+To export the presentation as a PDF, refer to the [Reveal.js documentation](https://revealjs.com/pdf-export/).
+
 # License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 📄
