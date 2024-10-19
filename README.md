@@ -1,50 +1,48 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+# Web Dev Beginner Workshop 🚀💻
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).
+This repository contains a presentation for what I found to be very useful for beginners to get started with web development. The presentation is meant to be given in a workshop setting in an hour, and is not meant to be a comprehensive guide to web development.
 
-The framework comes with a powerful feature set including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX typesetting](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and an [extensive API](https://revealjs.com/api/).
+For a comprehensive guide to web development, check out the following free online course:
 
----
+https://fullstackopen.com/en/ 📚
 
-Want to create reveal.js presentation in a graphical editor? Try <https://slides.com>. It's made by the same people behind reveal.js.
+## Running the Presentation 🏃‍♂️
 
----
+Follow these steps to run the presentation locally:
 
-### Sponsors
-Hakim's open source work is supported by <a href="https://github.com/sponsors/hakimel">GitHub sponsors</a>. Special thanks to:
-<div align="center">
-  <table>
-    <td align="center">
-      <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
-        <div>
-          <img src="https://user-images.githubusercontent.com/629429/151508669-efb4c3b3-8fe3-45eb-8e47-e9510b5f0af1.svg" width="290" alt="WorkOS">
-        </div>
-        <b>Your app, enterprise-ready.</b>
-        <div>
-          <sub>Start selling to enterprise customers with just a few lines of code. Add Single Sign-On (and more) in minutes instead of months.</sup>
-        </div>
-      </a>
-    </td>
-  </table>
-</div>
+1. Clone the repository: 📥
+   ```
+   git clone https://github.com/your-username/web-dev-beginner-workshop.git
+   cd web-dev-beginner-workshop
+   ```
 
----
+2. Install fnm (Fast Node Manager): ⚡
+   ```
+   curl -fsSL https://fnm.vercel.app/install | bash
+   ```
 
-### Getting started
-- 🚀 [Install reveal.js](https://revealjs.com/installation)
-- 👀 [View the demo presentation](https://revealjs.com/demo)
-- 📖 [Read the documentation](https://revealjs.com/markup/)
-- 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
-- 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
+3. Install the latest LTS version of Node.js: 🟢
+   ```
+   fnm install --lts
+   fnm use lts-latest
+   ```
 
---- 
-<div align="center">
-  MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
-</div>
+4. Install dependencies: 📦
+   ```
+   npm install
+   ```
+
+5. Start the presentation: 🎬
+   ```
+   npm start
+   ```
+
+6. Open your browser and navigate to `http://localhost:8000` to view the presentation. 🌐
+
+## Learn More 🧠
+
+This presentation was created using Reveal.js. To learn more about how to create and customize your own presentations, check out the [Reveal.js documentation](https://revealjs.com/). 🎨
+
+# License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 📄
