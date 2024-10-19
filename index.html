@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Magic Workshop ✨</title>
+    <meta
+      name="description"
+      content="Web Development Workshop for High School Students"
+    />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.1/css/catppuccin-mocha.css"
+    />
+
+    <style>
+      :root {
+        --r-background-color: #1a1a2e;
+        --r-main-color: #e0e0e0;
+        --r-heading-color: #ffffff;
+        --r-link-color: #64ffda;
+        --r-selection-background-color: #0d0d1a;
+      }
+
+      .reveal-viewport {
+        background: #0f0f1a;
+      }
+
+      .reveal .r-stack {
+        width: 75%;
+        margin: 0 auto;
+      }
+
+      .reveal .r-stack > * {
+        width: 100%;
+      }
+
+      .reveal pre {
+        width: 75%;
+        margin: auto;
+      }
+
+      .reveal pre code {
+        display: block;
+        max-height: none;
+        padding: 1em;
+        margin: auto;
+        font-size: 0.8em;
+        line-height: 1.4;
+        background-color: #1e1e2e;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+      }
+
+      /* Adjust font sizes */
+      .reveal h1 {
+        font-size: 2.2em;
+      }
+
+      .reveal h2 {
+        font-size: 1.8em;
+      }
+
+      .reveal h3 {
+        font-size: 1.4em;
+      }
+
+      .reveal p,
+      .reveal li {
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-transition="fade">
+          <h1>Welcome to Web Magic! ✨</h1>
+          <img
+            src="assets/slide_0/wizard.jpg"
+            alt="Wizard"
+            style="border-radius: 10px; width: 10em"
+          />
+          <p>Presented by: <strong>Alex Lavaee</strong></p>
+        </section>
+
+        <section>
+            <h1>Speaker Bio</h1>
+
+          <div>
+            <ul>
+              <li>Data Science @ BU</li>
+              <li>Previously: Software Engineer Intern @ Microsoft</li>
+              <li>
+                7-time Intern as Software Engineer, Data Scientist, Machine
+                Learning Engineer
+              </li>
+            </div>
+            <img
+              src="assets/slide_1/profile.jpg"
+              style="width: 7.5em; border-radius: 100%"
+            />
+          </section>
+
+        <section>
+          <h1>Today's Adventure 🗺️</h1>
+          <ul>
+            <li class="fragment">The Building Blocks: HTML 🧱</li>
+            <li class="fragment">Adding Style: CSS 🎨</li>
+            <li class="fragment">Bringing Pages to Life: JavaScript 🚀</li>
+            <li class="fragment">Crafting Your Own Interactive Webpage 💻</li>
+            <li class="fragment">Resources & Next Steps 📚</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>What is Web Development? 🌐</h1>
+          <p class="fragment fade-in">
+            Web Development = <strong>Digital Magic</strong>
+          </p>
+          <ul>
+            <li class="fragment fade-in">
+              <strong>HTML</strong>: The spells that build the structure. 📜
+            </li>
+            <li class="fragment fade-in">
+              <strong>CSS</strong>: The enchantments that beautify. 🎭
+            </li>
+            <li class="fragment fade-in">
+              <strong>JavaScript</strong>: The potions that add life. 🧪
+            </li>
+          </ul>
+        </section>
+
+        <!-- HTML Section -->
+        <section>
+          <h1>The Web's Secret Language - HTML 🔍</h1>
+          <p class="fragment fade-in">
+            <strong>HTML</strong>: HyperText Markup Language
+          </p>
+          <p class="fragment fade-in">The web's foundational language.</p>
+          <pre class="fragment"><code data-trim data-line-numbers>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Magical Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to my site!&lt;/h1&gt;
+    &lt;p&gt;This is where the magic happens.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+        </section>
+        <section>
+          <h1>HTML Tags &amp; Elements</h1>
+          <div class="r-stack" style="margin: 0 auto">
+            <p class="fragment fade-in-then-out" data-fragment-index="0">
+              An <strong>HTML element</strong> is defined by a start tag, some
+              content, and an end tag.
+            </p>
+            <div class="fragment fade-in-then-out" data-fragment-index="1">
+              <h2>Heading Tag</h2>
+              <pre><code data-trim data-line-numbers>
+&lt;h4&gt;Hello World 👋🏼&lt;/h4&gt; 
+              </code></pre>
+              <h4>Hello World 👋🏼</h4>
+            </div>
+
+            <div class="fragment fade-in-then-out" data-fragment-index="2">
+              <h2>Paragraph Tag</h2>
+              <pre><code data-trim data-line-numbers>
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+              </code></pre>
+              <p>This is a paragraph of text.</p>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="3">
+              <h2>Link Tag</h2>
+              <pre><code data-trim data-line-numbers>
+&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;
+              </code></pre>
+              <a href="https://www.example.com">Click here</a>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="4">
+              <h2>Image Tag</h2>
+              <pre><code data-trim data-line-numbers>
+&lt;img src="image.jpg" alt="Description of image"&gt;
+              </code></pre>
+              <img
+                src="assets/slide_5/image.jpg"
+                style="width: 10em; border-radius: 10px"
+                alt="Description of image"
+              />
+            </div>
+            <div class="fragment fade-in" data-fragment-index="5">
+              <h3>List Tags</h3>
+              <pre><code data-trim data-line-numbers>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+              </code></pre>
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>HTML Attributes: Adding Superpowers to Elements</h2>
+
+          <div class="r-stack">
+            <p class="fragment fade-in-then-out" data-fragment-index="0">
+              Attributes provide additional information (metadata) about
+              elements.
+            </p>
+            <p class="fragment fade-in" data-fragment-index="1">
+              They always come in name/value pairs like:
+              <code style="color: #cba6f7">name="value"</code>
+            </p>
+          </div>
+          <pre class="fragment fade-in" data-fragment-index="1">
+            <code data-trim data-line-numbers="1|2|3">
+              &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+              &lt;img src="image.jpg" alt="A magical wizard's hat"&gt;
+              &lt;input type="text" placeholder="Enter your spell here"&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>The Document Object Model (DOM)</h2>
+          <div class="r-stack">
+            <p class="fragment fade-in-then-out" data-fragment-index="0">
+              The <strong>DOM</strong> is a programming interface for HTML.
+            </p>
+            <p class="fragment fade-in-then-out" data-fragment-index="1">
+              Represents the page so programs can change the document structure,
+              style, and content.
+            </p>
+            <p class="fragment fade-in-then-out" data-fragment-index="2">
+              With JavaScript, you can manipulate the DOM to make dynamic
+              webpages.
+            </p>
+            <pre class="fragment fade-in-then-out" data-fragment-index="3">
+                <code data-trim data-line-numbers>
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  &lt;head&gt;
+                      &lt;meta charset="UTF-8"&gt;
+                      &lt;title&gt;Page Title&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                      &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                      &lt;ul&gt;
+                          &lt;li&gt;List item 1&lt;/li&gt;
+                          &lt;li&gt;List item 2&lt;/li&gt;
+                      &lt;/ul&gt;
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+                </code>
+              </pre>
+            <img
+              class="fragment fade-in"
+              style="height: 100%"
+              data-fragment-index="4"
+              src="assets/slide_7/dom.svg"
+            />
+          </div>
+        </section>
+
+        <!-- CSS Section -->
+        <section>
+          <h2>Styling with CSS - Adding Colors to Your World 🌈</h2>
+          <p><strong>CSS</strong>: Cascading Style Sheets</p>
+          <pre
+            class="fragment"
+          ><code class="hljs css" data-trim data-line-numbers>
+body {
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+h1 {
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+p {
+  color: #666;
+  line-height: 1.6;
+}
+                </code></pre>
+        </section>
+
+        <section>
+          <h2>How to Include CSS</h2>
+          <ol>
+            <li class="fragment fade-in">
+              <strong>Inline Styles</strong>: Using the
+              <code>style</code> attribute
+            </li>
+            <pre class="fragment"><code data-trim data-line-numbers>
+&lt;p style="color: blue;"&gt;This is a blue paragraph.&lt;/p&gt;
+            </code></pre>
+            <li class="fragment fade-in">
+              <strong>Internal Stylesheet</strong>: Using the
+              <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code>
+            </li>
+            <pre class="fragment"><code data-trim data-line-numbers>
+&lt;head&gt;
+  &lt;style&gt;
+    p { color: blue; }
+  &lt;/style&gt;
+&lt;/head&gt;
+            </code></pre>
+            <li class="fragment fade-in">
+              <strong>External Stylesheet</strong>: Linking a .css file
+            </li>
+            <pre class="fragment"><code data-trim data-line-numbers>
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+            </code></pre>
+          </ol>
+        </section>
+
+        <section>
+          <h2>CSS Selectors &amp; Properties</h2>
+          <ul>
+            <li class="fragment fade-in">
+              <strong>Element Selector</strong>: Selects all elements of a type
+            </li>
+            <pre
+              class="fragment"
+            ><code class="hljs css" data-trim data-line-numbers>
+p {
+  color: red;
+}
+            </code></pre>
+            <li class="fragment fade-in">
+              <strong>Class Selector</strong>: Selects elements with a specific
+              class
+            </li>
+            <pre
+              class="fragment"
+            ><code class="hljs css" data-trim data-line-numbers>
+.myClass {
+  font-size: 20px;
+}
+            </code></pre>
+            <li class="fragment fade-in">
+              <strong>ID Selector</strong>: Selects the element with a specific
+              id
+            </li>
+            <pre
+              class="fragment"
+            ><code class="hljs css" data-trim data-line-numbers>
+#myId {
+  background-color: yellow;
+}
+            </code></pre>
+          </ul>
+        </section>
+
+        <section>
+          <h2 style="color: #cba6f7">Essential CSS Techniques</h2>
+          <div class="r-stack" style="margin: 0 auto">
+            <p
+              class="fragment fade-in-then-out"
+              data-fragment-index="0"
+              style="color: #f5e0dc"
+            >
+              Here are 20 commonly used CSS techniques every web developer
+              should know:
+            </p>
+            <div class="fragment fade-in-then-out" data-fragment-index="1">
+              <h3 style="color: #89dceb">1. Flexbox Layout</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+              </code></pre>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  background: #1e1e2e;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <div
+                  style="
+                    background: #f38ba8;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Item 1
+                </div>
+                <div
+                  style="
+                    background: #89b4fa;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Item 2
+                </div>
+                <div
+                  style="
+                    background: #a6e3a1;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Item 3
+                </div>
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="2">
+              <h3 style="color: #89dceb">2. CSS Grid</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+              </code></pre>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 10px;
+                  background: #1e1e2e;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <div
+                  style="
+                    background: #f38ba8;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Grid 1
+                </div>
+                <div
+                  style="
+                    background: #89b4fa;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Grid 2
+                </div>
+                <div
+                  style="
+                    background: #a6e3a1;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Grid 3
+                </div>
+                <div
+                  style="
+                    background: #fab387;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Grid 4
+                </div>
+                <div
+                  style="
+                    background: #cba6f7;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Grid 5
+                </div>
+                <div
+                  style="
+                    background: #94e2d5;
+                    padding: 10px;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Grid 6
+                </div>
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="3">
+              <h3 style="color: #89dceb">
+                3. Responsive Design with Media Queries
+              </h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+              </code></pre>
+              <p style="color: #f5e0dc">
+                Resize the browser to see the effect (not visible in this
+                presentation).
+              </p>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="4">
+              <h3 style="color: #89dceb">
+                4. CSS Variables (Custom Properties)
+              </h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+:root {
+  --main-color: #89b4fa;
+}
+.button {
+  background-color: var(--main-color);
+}
+              </code></pre>
+              <button
+                style="
+                  background-color: #89b4fa;
+                  border: none;
+                  color: #1e1e2e;
+                  padding: 10px 20px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
+              >
+                Styled Button
+              </button>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="5">
+              <h3 style="color: #89dceb">5. Transitions and Animations</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.button {
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #cba6f7;
+}
+              </code></pre>
+              <p style="color: #f5e0dc">
+                Hover effect not visible in this presentation.
+              </p>
+              <button
+                style="
+                  background-color: #89b4fa;
+                  border: none;
+                  color: #1e1e2e;
+                  padding: 10px 20px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
+              >
+                Hover Me
+              </button>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="6">
+              <h3 style="color: #89dceb">6. Box Sizing</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+* {
+  box-sizing: border-box;
+}
+              </code></pre>
+              <div
+                style="
+                  width: 200px;
+                  padding: 20px;
+                  border: 5px solid #89b4fa;
+                  background: #1e1e2e;
+                  color: #f5e0dc;
+                  border-radius: 5px;
+                "
+              >
+                <p style="margin: 0">Content stays within the box</p>
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="7">
+              <h3 style="color: #89dceb">
+                7. Pseudo-classes and Pseudo-elements
+              </h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+a:hover {
+  color: #f38ba8;
+}
+p::first-letter {
+  font-size: 2em;
+  color: #cba6f7;
+}
+              </code></pre>
+              <p style="color: #f5e0dc">
+                Hover effect not visible in this presentation.
+              </p>
+              <a href="#" style="color: #89b4fa; text-decoration: none"
+                >Hover over me</a
+              >
+              <p style="color: #f5e0dc; margin-top: 10px">
+                <span style="font-size: 2em; color: #cba6f7">L</span>arge first
+                letter
+              </p>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="8">
+              <h3 style="color: #89dceb">8. CSS Positioning</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+              </code></pre>
+              <div
+                style="
+                  position: relative;
+                  width: 200px;
+                  height: 100px;
+                  background: #1e1e2e;
+                  border: 1px solid #cba6f7;
+                  border-radius: 5px;
+                "
+              >
+                <div
+                  style="
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: #f38ba8;
+                    color: #1e1e2e;
+                    padding: 5px;
+                    border-radius: 0 5px 0 5px;
+                  "
+                >
+                  Absolute
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    top: 20px;
+                    left: 20px;
+                    background: #89b4fa;
+                    color: #1e1e2e;
+                    padding: 5px;
+                    border-radius: 3px;
+                  "
+                >
+                  Relative
+                </div>
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="9">
+              <h3 style="color: #89dceb">9. Flexbox Centering</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+              </code></pre>
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 100px;
+                  background: #1e1e2e;
+                  border-radius: 5px;
+                "
+              >
+                <div
+                  style="
+                    background: #89b4fa;
+                    color: #1e1e2e;
+                    padding: 10px;
+                    border-radius: 3px;
+                  "
+                >
+                  Centered Content
+                </div>
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="10">
+              <h3 style="color: #89dceb">10. CSS Reset/Normalize</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+              </code></pre>
+              <p style="color: #f5e0dc">
+                Ensures consistent styling across browsers
+              </p>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="11">
+              <h3 style="color: #89dceb">11. Custom Fonts</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+@font-face {
+  font-family: 'CustomFont';
+  src: url('path/to/font.woff2') format('woff2');
+}
+body {
+  font-family: 'CustomFont', sans-serif;
+}
+              </code></pre>
+              <p style="font-family: 'Arial', sans-serif; color: #f5e0dc">
+                This text uses a custom font (simulated)
+              </p>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="12">
+              <h3 style="color: #89dceb">12. Text Shadow</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+              </code></pre>
+              <h2
+                style="
+                  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                  color: #cba6f7;
+                "
+              >
+                Shadowed Text
+              </h2>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="13">
+              <h3 style="color: #89dceb">13. Gradient Background</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.gradient-bg {
+  background: linear-gradient(45deg, #89b4fa, #cba6f7);
+}
+              </code></pre>
+              <div
+                style="
+                  background: linear-gradient(45deg, #89b4fa, #cba6f7);
+                  padding: 20px;
+                  color: #1e1e2e;
+                  border-radius: 5px;
+                "
+              >
+                Gradient Background
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="14">
+              <h3 style="color: #89dceb">14. Box Shadow</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.shadow-box {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+              </code></pre>
+              <div
+                style="
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  padding: 20px;
+                  background: #1e1e2e;
+                  color: #f5e0dc;
+                  border-radius: 5px;
+                "
+              >
+                Box with Shadow
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="15">
+              <h3 style="color: #89dceb">15. Text Overflow</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+              </code></pre>
+              <div
+                style="
+                  width: 200px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  background: #1e1e2e;
+                  color: #f5e0dc;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              >
+                This is a long text that will be truncated with an ellipsis
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="16">
+              <h3 style="color: #89dceb">16. Sticky Positioning</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.sticky {
+  position: sticky;
+  top: 0;
+}
+              </code></pre>
+              <p style="color: #f5e0dc">
+                Scroll to see the sticky effect (not shown in this demo)
+              </p>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="17">
+              <h3 style="color: #89dceb">17. CSS Columns</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.multi-column {
+  column-count: 3;
+  column-gap: 20px;
+}
+              </code></pre>
+              <div
+                style="
+                  column-count: 3;
+                  column-gap: 20px;
+                  text-align: justify;
+                  color: #f5e0dc;
+                  background: #1e1e2e;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                euismod, nisi vel consectetur interdum, nisl nunc egestas nunc,
+                vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel
+                consectetur interdum, nisl nunc egestas nunc, vitae tincidunt
+                nisl nunc euismod nunc.
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="18">
+              <h3 style="color: #89dceb">18. CSS Filters</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.blur-effect {
+  filter: blur(5px);
+}
+              </code></pre>
+              <div
+                style="background: #1e1e2e; padding: 10px; border-radius: 5px"
+              >
+                <img
+                  src="https://via.placeholder.com/150"
+                  alt="Placeholder"
+                  style="filter: blur(5px); border-radius: 3px"
+                />
+              </div>
+            </div>
+            <div class="fragment fade-in-then-out" data-fragment-index="19">
+              <h3 style="color: #89dceb">19. CSS Transform</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.rotate {
+  transform: rotate(45deg);
+}
+              </code></pre>
+              <div
+                style="background: #1e1e2e; padding: 20px; border-radius: 5px"
+              >
+                <div
+                  style="
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    padding: 10px;
+                    background: #89b4fa;
+                    color: #1e1e2e;
+                    border-radius: 3px;
+                  "
+                >
+                  Rotated Text
+                </div>
+              </div>
+            </div>
+            <div class="fragment fade-in" data-fragment-index="20">
+              <h3 style="color: #89dceb">20. Viewport Units</h3>
+              <pre><code class="hljs css" data-trim data-line-numbers>
+.full-height {
+  height: 100vh;
+}
+              </code></pre>
+              <p style="color: #f5e0dc">100vh = 100% of the viewport height</p>
+            </div>
+          </div>
+        </section>
+        <!-- JavaScript Section -->
+        <section>
+          <h2>Introducing JavaScript - The Web's Wizardry 🪄</h2>
+          <p><strong>JavaScript</strong>: The Magic Wand</p>
+          <pre
+            class="fragment"
+          ><code class="hljs javascript" data-trim data-line-numbers>
+function greet() {
+  let name = prompt("What's your name, young wizard?");
+  alert(\`Welcome to Web Magic, \${name}! ✨\`);
+}
+
+document.querySelector('button').addEventListener('click', greet);
+            </code></pre>
+        </section>
+
+        <section>
+          <h2>Adding JavaScript to Your Page</h2>
+          <ol>
+            <li class="fragment fade-in">
+              <strong>Inline JavaScript</strong>: Using the
+              <code>&lt;script&gt;</code> tag
+            </li>
+            <pre class="fragment"><code data-trim data-line-numbers>
+&lt;body&gt;
+  &lt;script&gt;
+    alert('Hello, World!');
+  &lt;/script&gt;
+&lt;/body&gt;
+            </code></pre>
+            <li class="fragment fade-in">
+              <strong>External JavaScript</strong>: Linking a .js file
+            </li>
+            <pre class="fragment"><code data-trim data-line-numbers>
+&lt;head&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+            </code></pre>
+          </ol>
+        </section>
+
+        <section>
+          <h2>JavaScript Basics: Variables &amp; Functions</h2>
+          <div class="fragment fade-in">
+            <p>Variables store data values.</p>
+            <pre><code class="hljs javascript" data-trim data-line-numbers>
+let message = 'Hello, World!';
+const pi = 3.1416;
+            </code></pre>
+          </div>
+          <div class="fragment fade-in">
+            <p>Functions perform actions.</p>
+            <pre><code class="hljs javascript" data-trim data-line-numbers>
+function greet(name) {
+  console.log('Hello, ' + name + '!');
+}
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h2>Interacting with the DOM</h2>
+          <div class="fragment fade-in">
+            <p>Use JavaScript to change HTML content.</p>
+            <pre><code class="hljs javascript" data-trim data-line-numbers>
+document.getElementById('myElement').innerHTML = 'New Content!';
+            </code></pre>
+          </div>
+          <div class="fragment fade-in">
+            <p>Respond to events:</p>
+            <pre><code class="hljs javascript" data-trim data-line-numbers>
+            class="fragment"
+document.getElementById('myButton').addEventListener('click', function() {
+  alert('Button clicked!');
+});
+            </code></pre>
+        </section>
+
+        <!-- Resources Section -->
+        <section>
+          <h2>Resources for Aspiring Web Wizards 📚</h2>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/html/"
+                >HTML Tutorial on W3Schools</a
+              >
+              - Learn HTML basics 📖
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/"
+                >CSS Tutorial on W3Schools</a
+              >
+              - Master CSS styles 🎨
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/js/"
+                >JavaScript Tutorial on W3Schools</a
+              >
+              - Dive into JavaScript
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web"
+                >MDN Web Docs</a
+              >
+              - Comprehensive web documentation 🏛️
+            </li>
+            <li>
+              <a href="https://codepen.io/">CodePen</a> - Experiment and share
+              your code 🎠
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Bonus: React ⚛️</h2>
+          <p>
+            <strong>React</strong> is a JavaScript library for building user
+            interfaces.
+          </p>
+          <ul>
+            <li class="fragment fade-in">Created by Meta.</li>
+            <li class="fragment fade-in">
+              Makes it easier to build interactive UIs by packaging reusable
+              HTML and JavaScript code into constructs called
+              <strong>components</strong>.
+            </li>
+            <li class="fragment fade-in">
+              Uses components to build encapsulated elements.
+            </li>
+          </ul>
+          <p class="fragment fade-down">
+            Learn more at <a href="https://reactjs.org/">reactjs.org</a>
+          </p>
+        </section>
+
+        <!-- Thank You Section -->
+        <section>
+          <h2>Thank You, Web Wizards! 🎉</h2>
+          <p>You've Unlocked the Basics of Web Development!</p>
+          <p><strong>Stay Curious. Keep Coding. 🚀</strong></p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: "slide",
+        backgroundTransition: "fade",
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        width: 1200,
+        height: 700,
+        margin: 0.04,
+        minScale: 1.0,
+        maxScale: 2.0,
+      });
+    </script>
+  </body>
+</html>
